@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/main.css">
+	
+	<meta name="description" content="">
+	<meta name="keywords" content="">
+	<meta name="author" content="Dmitry Volkov">
+	<title>Documentation – BuyCoin HTML Template</title>
+</head>
+<body>
+
+	<div class="container">
+		<div class="row">
+			<div class="col-12">
+				<div class="jumbotron">
+					<h1 class="display-4"><b>BuyCoin</b> Documentation</h1>
+					<p class="lead">Hello. Thank you for your purchase!</p>
+					<hr class="my-4">
+					<p>Created: 29.08.2020 <br>
+						By: <a href="https://themeforest.net/user/dmitryvolkov" target="_blank">Dmitry Volkov</a> <br>
+						Email: <a href="mailto:dmitry.volkov.vetrov@gmail.com">dmitry.volkov.vetrov@gmail.com</a> <br>
+						Website: <a href="https://dmitryvolkov.me/" target="_blank">dmitryvolkov.me</a>
+					</p>
+				</div>
+			</div>
+
+			<div class="col-3">
+				<div id="list-example" class="list-group">
+					<a class="list-group-item list-group-item-action" href="#list-item-1">Getting started</a>
+					<a class="list-group-item list-group-item-action" href="#list-item-2">HTML structure</a>
+					<a class="list-group-item list-group-item-action" href="#list-item-3">Logotype</a>
+					<a class="list-group-item list-group-item-action" href="#list-item-4">Home</a>
+					<a class="list-group-item list-group-item-action" href="#list-item-5">About</a>
+					<a class="list-group-item list-group-item-action" href="#list-item-6">Sections</a>
+					<a class="list-group-item list-group-item-action" href="#list-item-7">Credits</a>
+					<a class="list-group-item list-group-item-action" href="#list-item-8">Support</a>
+				</div>
+			</div>
+
+			<div class="col-9">
+				<div data-spy="scroll" data-target="#list-example" data-offset="0" class="scrollspy-example">
+					<h2 id="list-item-1">Getting started</h2>
+					<p>Unzip the archive and find out the folder www. There are all the template files in this folder. You can open the following files for viewing in browser.</p>
+					<ol>
+						<li><b>/css</b> — folder with css files.</li>
+						<li><b>/fonts</b> — folder with icon fonts.</li>
+						<li><b>/icon</b> — folder with favicons.</li>
+						<li><b>/img</b> — folder with image files.</li>
+						<li><b>/js</b> — folder with javascript files. <br><br></li>
+						<li><b>index.html</b> — landing page style 1.</li>
+						<li><b>index2.html</b> — landing page style 2.</li>
+						<li><b>index3.html</b> — landing page style 3.</li>
+						<li><b>index4.html</b> — landing page style 4.</li>
+					</ol>
+
+					<p>Upload the template files (inside the folder www) to server with the help of one of the FTP-clients.</p>
+
+
+					<h2 id="list-item-2" class="mt-5">HTML structure</h2>
+					<p>In my template I use Bootstrap grid, if you don't know how to use it, <a href="https://getbootstrap.com/docs/4.3/getting-started/introduction/">here</a> is a detailed information on its use.</p>
+					<p>The standard section has the following HTML structure:</p>
+<pre>
+&lt;section class="section"&gt;
+  &lt;div class="container"&gt;
+    &lt;div class="row"&gt;
+      &lt;div class="col-12"&gt;
+        &lt;h2 class="section__title"&gt;BuyCoin Template&lt;/h2&gt;
+      &lt;/div&gt;
+      ...
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/section&gt;
+</pre>
+					
+					<h2 id="list-item-3" class="mt-5">Logotype</h2>
+					<p>To change logotype, find image <b>img/logo.svg</b> and replace it with your logo.</p>
+
+					<h2 id="list-item-4" class="mt-5">Home</h2>
+
+					<br>
+					<p><b>Slider</b></p>
+					<p>To change the slider image, open HTML file and replace the value of <code>data-bg</code> attribute of this construction:</p>
+<pre>
+&lt;section id="home" class="home"&gt;
+  &lt;div class="owl-carousel home__slider"&gt;
+    &lt;div class="item" data-bg="img/home/slide.jpg"&gt;&lt;/div&gt;
+    ...
+  &lt;/div&gt;
+&lt;/section&gt;
+</pre>
+					<br>
+					<p><b>Parallax</b></p>
+					<p>To change the background image, open HTML file and replace the value of <code>data-image-src</code> attribute of this construction:</p>
+<pre>
+&lt;section id="home" class="home" data-parallax="scroll" data-image-src="img/home/slide.jpg"&gt;
+  &lt;div class="container"&gt;
+    ...
+  &lt;/div&gt;
+&lt;/section&gt;
+</pre>
+					<br>
+					<p><b>Static</b></p>
+					<p>To change the background image, open HTML file and replace the value of <code>data-bg</code> attribute of this construction:</p>
+<pre>
+&lt;section id="home" class="home section--bg" data-bg="img/home/slide.jpg"&gt;
+  &lt;div class="container"&gt;
+    ...
+  &lt;/div&gt;
+&lt;/section&gt;
+</pre>
+
+					<h2 id="list-item-5" class="mt-5">About</h2>
+					<p>To change section style, open HTML file and replace modification class on any of the following:</p>
+					<ul>
+						<li>about--wave</li>
+						<li>about--arrow</li>
+						<li>about--angle</li>
+						<li>about--angle2</li>
+					</ul>
+					<p>For example the about section with "arrow" style:</p>
+<pre>
+&lt;section id="about" class="about about--arrow section--gradient"&gt;
+  &lt;div class="container"&gt;
+    ...
+  &lt;/div&gt;
+&lt;/section&gt;
+</pre>
+
+					<h2 id="list-item-6" class="mt-5">Sections</h2>
+					<p>By default section have white background color, but you may change style:</p>
+
+					<br>
+					<p><b>section--grey</b> – grey background color</p>
+<pre>
+&lt;section class="section section--grey"&gt;
+  &lt;div class="container"&gt;
+    ...
+  &lt;/div&gt;
+&lt;/section&gt;
+</pre>
+					<br>
+					<p><b>section--gradient</b> – gradient background</p>
+<pre>
+&lt;section class="section section--gradient"&gt;
+  &lt;div class="container"&gt;
+    ...
+  &lt;/div&gt;
+&lt;/section&gt;
+</pre>
+						
+					<br>
+					<p><b>section--pt0</b> – section with <code>pading-top:0;</code></p>
+<pre>
+&lt;section class="section section--pt0"&gt;
+  &lt;div class="container"&gt;
+    ...
+  &lt;/div&gt;
+&lt;/section&gt;	
+</pre>
+
+					<br>
+					<p><b>section--bg</b> – section with static background image</p>
+<pre>
+&lt;section class="section section--bg" data-bg="img/section/section-bg.jpg"&gt;
+  &lt;div class="container"&gt;
+    ...
+  &lt;/div&gt;
+&lt;/section&gt;
+</pre>
+					<br>
+					<p>section with parallax image</p>
+<pre>
+&lt;section class="section" data-src="img/section-bg/section-bg1.jpg" data-parallax&gt;
+  &lt;div class="container"&gt;
+    ...
+  &lt;/div&gt;
+&lt;/section&gt;
+</pre>
+
+					<h2 id="list-item-7" class="mt-5">Credits</h2>
+					<ul class="list-unstyled">
+						<li><a href="http://jquery.com/" target="_blank">jQuery</a></li>
+						<li><a href="http://getbootstrap.com/" target="_blank">Bootstrap</a></li>
+						<li><a href="https://owlcarousel2.github.io/OwlCarousel2/" target="_blank">Owl Carousel</a></li>
+						<li><a href="https://dimsemenov.com/plugins/magnific-popup/" target="_blank">Magnific Popup</a></li>
+						<li><a href="https://github.com/pixelcog/parallax.js/tree/v2.0.0-alpha" target="_blank">Parallax Scrolling</a></li>
+						<li><a href="https://github.com/cferdinandi/smooth-scroll" target="_blank">Smooth scroll</a></li>
+						<li><a href="https://github.com/imakewebthings/waypoints" target="_blank">Waypoints</a></li>
+						<li><a href="https://github.com/ciromattia/jquery.counterup" target="_blank">Counterup</a></li>
+						<li><a href="https://paymentfont.com/" target="_blank">PaymentFont</a></li>
+						<li><a href="https://github.com/Iconscout/unicons" target="_blank">Unicons</a></li>
+					</ul>
+
+					<h2 id="list-item-8" class="mt-5">Support</h2>
+					<p class="mb-5">If you have any questions, feel free to contact me at <a href="mailto:dmitry.volkov.vetrov@gmail.com">dmitry.volkov.vetrov@gmail.com</a>.</p>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<script src="js/jquery-3.5.1.min.js"></script>
+	<script src="js/bootstrap.bundle.min.js"></script>
+	<script>
+	$('body').scrollspy({ target: '#list-example' })
+
+	$('a[href^="#"]').on('click', function() {
+		var target = $(this).attr('href');
+		$('html, body').animate({scrollTop: $(target).offset().top}, 500);
+		return false;
+	});
+	</script>
+</body>
+</html>

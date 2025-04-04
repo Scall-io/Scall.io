@@ -1,0 +1,15 @@
+.jumbotron {
+	border-radius: 0 0 4px 4px;
+}
+pre {
+	padding: 20px;
+	background: #e9ecef;
+	border-radius: 4px;
+}
+.list-group {
+	position: sticky;
+	top: 30px;
+}
+.list-group-item {
+	transition: 0.4s;
+}
